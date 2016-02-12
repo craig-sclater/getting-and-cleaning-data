@@ -7,7 +7,7 @@
 #           measurements that can be used for later analysis.
 # **********************************************************************************************
 #
-#  **** Step 1 : Merge the test and training data into one data set. ****
+# Step 1 : Merge the test and training data into one data set. 
 #
 # 1.a >> read and combine the test and training activity data
 activity <- read.table(file.path(getwd(),"UCI HAR Dataset","test","y_test.txt"), header=FALSE, col.names="activity.id")
@@ -22,7 +22,7 @@ features <- read.table(file.path(getwd(), "UCI HAR Dataset","test","X_test.txt")
 features <- rbind(features, read.table(file.path(getwd(), "UCI HAR Dataset","train","X_train.txt"), header=FALSE))
 
 #
-#  **** Step 2: Appropriately label the data set with descriptive variable names. ****
+# Step 2: Appropriately label the data set with descriptive variable names. 
 #
 # 2.a >> read the feature labels
 feature_labels <- read.table(file.path(getwd(),"UCI HAR Dataset","features.txt"), header=FALSE, col.names=c("feature.id","feature.name"))
@@ -38,15 +38,15 @@ feature_labels$feature.name <- gsub("BodyBody", "Body", feature_labels$feature.n
 # 2.c >> assign feature names to the features data set
 names(features) <- feature_labels$feature.name
 
-# **** Step 3 : Extract only the measurements on the mean and standard deviation for each measurement. ****
+#  Step 3 : Extract only the measurements on the mean and standard deviation for each measurement. 
 #
 features <- features[,grepl("mean\\(\\)|std\\(\\)",feature_labels$feature.name)]
 
-# **** Step 4 : Combine the subject, activity, and features data. ****
+#  Step 4 : Combine the subject, activity, and features data. 
 #
 combined_data <- cbind(subjects, activity, features)
 
-# **** Step 5 : Use descriptive activity names to name the activities in the data set. ****
+#  Step 5 : Use descriptive activity names to name the activities in the data set. 
 #
 # 5.a >> read the activity labels
 activity_labels <- read.table(file.path(getwd(),"UCI HAR Dataset","activity_labels.txt"), header=FALSE, col.names=c("activity.id","activity.name"))
@@ -54,7 +54,7 @@ activity_labels <- read.table(file.path(getwd(),"UCI HAR Dataset","activity_labe
 # 5.b >> merge activity labels into the combined data set
 combined_data <- merge(activity_labels, combined_data, by.x="activity.id", by.y="activity.id", all=TRUE)
 
-# **** Step 6 : Prepare a tidy data set with the average of each variable for each activity and subject. ****
+#  Step 6 : Prepare a tidy data set with the average of each variable for each activity and subject. 
 #
 # 6.a >> factorize activity.name and subject.id
 combined_data$activity.name <- as.factor(combined_data$activity.name)
