@@ -64,7 +64,7 @@ combined_data$subject.id <- as.factor(combined_data$subject.id)
 tidy_data <- aggregate(x=combined_data[,4:69], by=list(subject=combined_data$subject.id,activity=combined_data$activity.name), FUN=mean)
 
 # 6.c >> write file
-write.table(tidy_data, , file="tidy.txt", sep="\t", col.names=TRUE, row.names=FALSE)
+write.table(tidy_data, file="tidy.txt", sep="\t", col.names=TRUE, row.names=FALSE)
 
 
 
