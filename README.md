@@ -1,5 +1,5 @@
 ## getting-and-cleaning-data
-
+ 
 ###The purpose of this project is to collect, work with, and clean a data set.  The source data used is the Human Activity Recognition Using Smartphones Data Set, compiled by the Center for Machine Learning and Intelligent Systems at The University of California, Irvine.  This Human Activity Recognition database was built from the recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 ###The run_analysis.R code file in this repository collects the test and training data sets, and combines them with labels for the activities recorded and the measurements made.  It then gathers a subset of the data that includes all subjects and activities, but only those measurements reporting a mean or standard deviation.  The final output of the script is a file named tidy.csv, which is an aggregation of the mean and standard deviation data set, recording the average values for each measurement.

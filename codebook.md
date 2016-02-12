@@ -1,70 +1,70 @@
 ###The tidy data set produced by the run_analyis.R script has the following variables.
 
-* subject 
-* activity
-* timeBodyAccelerometer-mean()-X
-* timeBodyAccelerometer-mean()-Y
-* timeBodyAccelerometer-mean()-Z
-* timeBodyAccelerometer-std()-X
-* timeBodyAccelerometer-std()-Y
-* timeBodyAccelerometer-std()-Z
-* timeGravityAccelerometer-mean()-X
-* timeGravityAccelerometer-mean()-Y
-* timeGravityAccelerometer-mean()-Z
-* timeGravityAccelerometer-std()-X
-* timeGravityAccelerometer-std()-Y
-* timeGravityAccelerometer-std()-Z
-* timeBodyAccelerometerJerk-mean()-X
-* timeBodyAccelerometerJerk-mean()-Y
-* timeBodyAccelerometerJerk-mean()-Z
-* timeBodyAccelerometerJerk-std()-X
-* timeBodyAccelerometerJerk-std()-Y
-* timeBodyAccelerometerJerk-std()-Z
-* timeBodyGyroscope-mean()-X
-* timeBodyGyroscope-mean()-Y
-* timeBodyGyroscope-mean()-Z
-* timeBodyGyroscope-std()-X
-* timeBodyGyroscope-std()-Y
-* timeBodyGyroscope-std()-Z
-* timeBodyGyroscopeJerk-mean()-X
-* timeBodyGyroscopeJerk-mean()-Y
-* timeBodyGyroscopeJerk-mean()-Z
-* timeBodyGyroscopeJerk-std()-X
-* timeBodyGyroscopeJerk-std()-Y
-* timeBodyGyroscopeJerk-std()-Z
-* timeBodyAccelerometerMagnitude-mean()
-* timeBodyAccelerometerMagnitude-std()
-* timeGravityAccelerometerMagnitude-mean()
-* timeGravityAccelerometerMagnitude-std()
-* timeBodyAccelerometerJerkMagnitude-mean()
-* timeBodyAccelerometerJerkMagnitude-std()
-* timeBodyGyroscopeMagnitude-mean()
-* timeBodyGyroscopeMagnitude-std()
-* timeBodyGyroscopeJerkMagnitude-mean()
-* timeBodyGyroscopeJerkMagnitude-std()
-* frequencyBodyAccelerometer-mean()-X
-* frequencyBodyAccelerometer-mean()-Y
-* frequencyBodyAccelerometer-mean()-Z
-* frequencyBodyAccelerometer-std()-X
-* frequencyBodyAccelerometer-std()-Y
-* frequencyBodyAccelerometer-std()-Z
-* frequencyBodyAccelerometerJerk-mean()-X
-* frequencyBodyAccelerometerJerk-mean()-Y
-* frequencyBodyAccelerometerJerk-mean()-Z
-* frequencyBodyAccelerometerJerk-std()-X
-* frequencyBodyAccelerometerJerk-std()-Y
-* frequencyBodyAccelerometerJerk-std()-Z
-* frequencyBodyGyroscope-mean()-X
-* frequencyBodyGyroscope-mean()-Y
-* frequencyBodyGyroscope-mean()-Z
-* frequencyBodyGyroscope-std()-X
-* frequencyBodyGyroscope-std()-Y
-* frequencyBodyGyroscope-std()-Z
-* frequencyBodyAccelerometerMagnitude-mean()
-* frequencyBodyAccelerometerMagnitude-std()
-* frequencyBodyAccelerometerJerkMagnitude-mean()
-* frequencyBodyAccelerometerJerkMagnitude-std()
-* frequencyBodyGyroscopeMagnitude-mean()
-* frequencyBodyGyroscopeMagnitude-std()
-* frequencyBodyGyroscopeJerkMagnitude-mean()
-* frequencyBodyGyroscopeJerkMagnitude-std()
+* subject : ID number of subjects in the study.  Values are 1 to 30.
+* activity : Descriptive label of activity performed during telemetry collection.  Values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+* timeBodyAccelerometer-mean()-X : measure.
+* timeBodyAccelerometer-mean()-Y : measure.
+* timeBodyAccelerometer-mean()-Z : measure.
+* timeBodyAccelerometer-std()-X : measure.
+* timeBodyAccelerometer-std()-Y : measure.
+* timeBodyAccelerometer-std()-Z : measure.
+* timeGravityAccelerometer-mean()-X : measure.
+* timeGravityAccelerometer-mean()-Y : measure.
+* timeGravityAccelerometer-mean()-Z : measure.
+* timeGravityAccelerometer-std()-X : measure.
+* timeGravityAccelerometer-std()-Y : measure.
+* timeGravityAccelerometer-std()-Z : measure.
+* timeBodyAccelerometerJerk-mean()-X : measure.
+* timeBodyAccelerometerJerk-mean()-Y : measure.
+* timeBodyAccelerometerJerk-mean()-Z : measure.
+* timeBodyAccelerometerJerk-std()-X : measure.
+* timeBodyAccelerometerJerk-std()-Y : measure.
+* timeBodyAccelerometerJerk-std()-Z : measure.
+* timeBodyGyroscope-mean()-X : measure.
+* timeBodyGyroscope-mean()-Y : measure.
+* timeBodyGyroscope-mean()-Z : measure.
+* timeBodyGyroscope-std()-X : measure.
+* timeBodyGyroscope-std()-Y : measure.
+* timeBodyGyroscope-std()-Z : measure.
+* timeBodyGyroscopeJerk-mean()-X : measure.
+* timeBodyGyroscopeJerk-mean()-Y : measure.
+* timeBodyGyroscopeJerk-mean()-Z : measure.
+* timeBodyGyroscopeJerk-std()-X : measure.
+* timeBodyGyroscopeJerk-std()-Y : measure.
+* timeBodyGyroscopeJerk-std()-Z : measure.
+* timeBodyAccelerometerMagnitude-mean() : measure.
+* timeBodyAccelerometerMagnitude-std() : measure.
+* timeGravityAccelerometerMagnitude-mean() : measure.
+* timeGravityAccelerometerMagnitude-std() : measure.
+* timeBodyAccelerometerJerkMagnitude-mean() : measure.
+* timeBodyAccelerometerJerkMagnitude-std() : measure.
+* timeBodyGyroscopeMagnitude-mean() : measure.
+* timeBodyGyroscopeMagnitude-std() : measure.
+* timeBodyGyroscopeJerkMagnitude-mean() : measure.
+* timeBodyGyroscopeJerkMagnitude-std() : measure.
+* frequencyBodyAccelerometer-mean()-X : measure.
+* frequencyBodyAccelerometer-mean()-Y : measure.
+* frequencyBodyAccelerometer-mean()-Z : measure.
+* frequencyBodyAccelerometer-std()-X : measure.
+* frequencyBodyAccelerometer-std()-Y : measure.
+* frequencyBodyAccelerometer-std()-Z : measure.
+* frequencyBodyAccelerometerJerk-mean()-X : measure.
+* frequencyBodyAccelerometerJerk-mean()-Y : measure.
+* frequencyBodyAccelerometerJerk-mean()-Z : measure.
+* frequencyBodyAccelerometerJerk-std()-X : measure.
+* frequencyBodyAccelerometerJerk-std()-Y : measure.
+* frequencyBodyAccelerometerJerk-std()-Z : measure.
+* frequencyBodyGyroscope-mean()-X : measure.
+* frequencyBodyGyroscope-mean()-Y : measure.
+* frequencyBodyGyroscope-mean()-Z : measure.
+* frequencyBodyGyroscope-std()-X : measure.
+* frequencyBodyGyroscope-std()-Y : measure.
+* frequencyBodyGyroscope-std()-Z : measure.
+* frequencyBodyAccelerometerMagnitude-mean() : measure.
+* frequencyBodyAccelerometerMagnitude-std() : measure.
+* frequencyBodyAccelerometerJerkMagnitude-mean() : measure.
+* frequencyBodyAccelerometerJerkMagnitude-std() : measure.
+* frequencyBodyGyroscopeMagnitude-mean() : measure.
+* frequencyBodyGyroscopeMagnitude-std() : measure.
+* frequencyBodyGyroscopeJerkMagnitude-mean() : measure.
+* frequencyBodyGyroscopeJerkMagnitude-std() : measure.
