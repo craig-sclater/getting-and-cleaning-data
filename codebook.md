@@ -29,8 +29,8 @@
 * 6.c Write tidy data to csv file.
 
 ### The final data set has the following variables.
-* activity
 * subject
+* activity
 * timeBodyAccelerometer-mean()-X
 * timeBodyAccelerometer-mean()-Y
 * timeBodyAccelerometer-mean()-Z
